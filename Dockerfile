@@ -5,3 +5,4 @@ RUN apt-get update && apt-get install -y wget
 RUN mkdir /opt/mothur 
 COPY /mothur /opt/mothur
 ENV PATH $PATH:/opt/mothur
+COPY /data /opt/datasets
